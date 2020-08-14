@@ -1,0 +1,39 @@
+.App {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar"
+    "landing landing landing landing landing landing"
+    "services services services services services services"
+    "about about about about about about"
+    "team team team team team team"
+    "contact contact contact contact contact contact"
+    "footer footer footer footer footer footer";
+
+  .navbar {
+    grid-area: navbar;
+  }
+  .landing {
+    grid-area: landing;
+  }
+  .services {
+    grid-area: services;
+  }
+  .about {
+    grid-area: about;
+  }
+  .team {
+    grid-area: team;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+  div {
+    text-align: center;
+    padding: 0;
+    font-size: 30px;
+  }
+}
