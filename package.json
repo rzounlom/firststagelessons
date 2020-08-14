@@ -1,0 +1,31 @@
+{
+  "name": "firststagelessons",
+  "version": "1.0.0",
+  "description": "Company Website for First Stage Guitar Lessons",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon --exec babel-node src/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzounlom/firststagelessons.git"
+  },
+  "author": "Romaric Zounlome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rzounlom/firststagelessons/issues"
+  },
+  "homepage": "https://github.com/rzounlom/firststagelessons#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
