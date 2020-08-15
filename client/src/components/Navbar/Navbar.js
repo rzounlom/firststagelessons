@@ -3,7 +3,9 @@ import "./Navbar.scss";
 
 import ScrollspyNav from "react-scrollspy-nav";
 
-const Navbar = () => {
+import { FaBars } from "react-icons/fa";
+
+const Navbar = ({ handleNavToggle }) => {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -18,14 +20,15 @@ const Navbar = () => {
   });
   return (
     <nav className={!scroll ? "navbar" : "navbar-scroll"} id="navbar">
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <a href="#landing">Logo</a>
+      </div>
       <ScrollspyNav
         scrollTargetIds={["landing", "services", "about", "team", "contact"]}
         offset={100}
         activeNavClass="is-active"
         scrollDuration="1000"
         headerBackground="true"
-        className="nav"
       >
         <ul>
           <li>
@@ -43,6 +46,9 @@ const Navbar = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <div className="navbar-toggle">
+            <FaBars onClick={() => handleNavToggle()} />
+          </div>
         </ul>
       </ScrollspyNav>
     </nav>

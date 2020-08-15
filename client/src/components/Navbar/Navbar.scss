@@ -11,9 +11,36 @@
   div:nth-child(2) {
     width: 50%;
   }
+
   ul {
-    display: flex;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: rgb(44, 37, 37);
+        font-weight: 600;
+      }
+    }
+
+    .navbar-toggle {
+      display: none;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 767px) {
+      justify-content: flex-end;
+      li {
+        display: none;
+      }
+      .navbar-toggle {
+        display: inherit;
+      }
+    }
   }
 }
 
