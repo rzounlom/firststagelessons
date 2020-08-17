@@ -11,7 +11,7 @@
     "footer footer footer footer footer footer";
 
   .navbar-mobile-opened {
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 100%;
     width: 60vw;
@@ -57,7 +57,7 @@
   }
 
   .navbar-mobile-closed {
-    position: absolute;
+    position: fixed;
     right: -460px;
     height: 100%;
     width: 60vw;

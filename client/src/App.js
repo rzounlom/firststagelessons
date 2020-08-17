@@ -48,7 +48,9 @@ const App = () => {
                 <a href="#landing">Home</a>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <a href="#services" onClick={() => handleNavToggle()}>
+                  Services
+                </a>
               </li>
               <li onClick={() => handleNavToggle()}>
                 <a href="#about">About</a>
