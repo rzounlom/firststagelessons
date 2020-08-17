@@ -7,6 +7,11 @@ import { FaBars } from "react-icons/fa";
 
 const Navbar = ({ handleNavToggle }) => {
   const [scroll, setScroll] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const activeBtn = () => {
+    !active ? setActive(true) : setActive(false);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
