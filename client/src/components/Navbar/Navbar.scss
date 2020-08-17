@@ -30,15 +30,18 @@
     .navbar-toggle {
       display: none;
       cursor: pointer;
+      color: white;
+      justify-self: flex-end;
     }
 
     @media screen and (max-width: 767px) {
-      justify-content: flex-end;
+      justify-content: flex-end !important;
       li {
         display: none;
       }
       .navbar-toggle {
         display: inherit;
+        margin-right: 5%;
       }
     }
   }
@@ -48,6 +51,30 @@
   background: rgba(0, 0, 0, 0);
   height: 10vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }
 
 .navbar-scroll {

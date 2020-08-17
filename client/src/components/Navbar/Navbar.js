@@ -26,7 +26,7 @@ const Navbar = ({ handleNavToggle }) => {
   return (
     <nav className={!scroll ? "navbar" : "navbar-scroll"} id="navbar">
       <div className="logo">
-        <a href="#landing">Logo</a>
+        <a href="/">Logo</a>
       </div>
       <ScrollspyNav
         scrollTargetIds={["landing", "services", "about", "team", "contact"]}
@@ -37,7 +37,7 @@ const Navbar = ({ handleNavToggle }) => {
       >
         <ul>
           <li>
-            <a href="#landing">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#services">Services</a>
