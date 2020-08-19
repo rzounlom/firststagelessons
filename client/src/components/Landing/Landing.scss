@@ -4,4 +4,45 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .landing-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 5.5rem;
+      opacity: 0.8;
+    }
+
+    .landing-btn {
+      button {
+        height: 60px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 10px;
+        opacity: 0.6;
+        background-color: seashell;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: 700;
+        }
+        &:hover {
+          opacity: 1;
+          background-color: rgb(71, 58, 247);
+          a {
+            color: white;
+          }
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
 }
