@@ -18,6 +18,7 @@
       font-weight: 700;
       font-size: 5.5rem;
       opacity: 0.8;
+      text-align: center;
     }
 
     .landing-btn {
@@ -33,15 +34,28 @@
           text-decoration: none;
           color: black;
           font-weight: 700;
+          transition: 0.2s ease-in-out;
         }
         &:hover {
           opacity: 1;
-          background-color: rgb(71, 58, 247);
+          background-color: #89c9e6;
           a {
             color: white;
           }
           transition: 0.2s ease-in-out;
         }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10%;
+      }
+    }
+
+    @media screen and (max-width: 380px) {
+      h1 {
+        font-size: 3.5rem;
       }
     }
   }
