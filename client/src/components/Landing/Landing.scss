@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 .landing {
   height: 100vh;
   background-image: url(../../img/landing/landing.jpg);
@@ -14,11 +16,18 @@
     justify-content: center;
     align-items: center;
     h1 {
-      color: white;
+      color: var(--white);
       font-weight: 700;
       font-size: 5.5rem;
-      opacity: 0.8;
+      opacity: 0.9;
       text-align: center;
+    }
+
+    p {
+      color: var(--border-color);
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.7rem;
     }
 
     .landing-btn {
@@ -27,8 +36,15 @@
         width: 200px;
         cursor: pointer;
         border-radius: 10px;
-        opacity: 0.6;
-        background-color: seashell;
+        color: var(--white);
+        font-weight: 700;
+        opacity: 0.8;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid var(--border-color);
+        transition: 0.2s ease-in-out;
+        box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
+        -webkit-box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
 
         a {
           text-decoration: none;
@@ -37,12 +53,19 @@
           transition: 0.2s ease-in-out;
         }
         &:hover {
-          opacity: 1;
-          background-color: #89c9e6;
+          opacity: 0.9;
+          background-color: var(--theme-color);
           a {
-            color: white;
+            color: var(--white);
           }
           transition: 0.2s ease-in-out;
+        }
+
+        &:hover {
+          height: 60px;
+          width: 190px;
+          transition: 0.2s ease-in-out;
+          color: var(--white);
         }
       }
     }
@@ -51,11 +74,19 @@
         font-size: 3.5rem;
         margin-bottom: 10%;
       }
+
+      p {
+        font-size: 1.5rem;
+      }
     }
 
     @media screen and (max-width: 380px) {
       h1 {
         font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 1.3rem;
       }
     }
   }

@@ -17,6 +17,7 @@ const App = () => {
   const handleNavToggle = () => {
     navToggle ? setNavToggle(false) : setNavToggle(true);
   };
+
   return (
     <div className="App">
       <div

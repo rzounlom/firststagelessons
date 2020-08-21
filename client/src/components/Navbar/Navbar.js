@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
+import logo from "../../img/logo/firststage_logo.jpg";
 
 import ScrollspyNav from "react-scrollspy-nav";
 
@@ -7,11 +8,6 @@ import { FaBars } from "react-icons/fa";
 
 const Navbar = ({ handleNavToggle }) => {
   const [scroll, setScroll] = useState(false);
-  const [active, setActive] = useState(false);
-
-  const activeBtn = () => {
-    !active ? setActive(true) : setActive(false);
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,17 +19,25 @@ const Navbar = ({ handleNavToggle }) => {
       }
     });
   });
+
+  const handleNavOffset = () => {
+    return window.innerWidth > 768 ? 10 : -50;
+  };
+
   return (
     <nav className={!scroll ? "navbar" : "navbar-scroll"} id="navbar">
       <div className="logo">
-        <a href="/">Logo</a>
+        <a href="/">
+          <img src={logo} alt="first stage logo" />
+        </a>
       </div>
       <ScrollspyNav
         scrollTargetIds={["landing", "services", "about", "team", "contact"]}
-        offset={100}
+        offset={handleNavOffset()}
         activeNavClass="is-active"
         scrollDuration="1000"
         headerBackground="true"
+        className="navbar"
       >
         <ul>
           <li>
