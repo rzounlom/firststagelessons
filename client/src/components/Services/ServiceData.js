@@ -1,3 +1,4 @@
+import React from "react";
 import { FiUsers } from "react-icons/fi";
 import { FaDrum, FaGuitar, FaMicrophoneAlt } from "react-icons/fa";
 import { GiPianoKeys, GiGuitar } from "react-icons/gi";

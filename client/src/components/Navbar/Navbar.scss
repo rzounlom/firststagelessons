@@ -15,6 +15,15 @@
     width: 50%;
   }
 
+  .logo {
+    a {
+      img {
+        max-width: 3rem;
+        margin-top: 10px;
+      }
+    }
+  }
+
   ul {
     width: 100%;
     display: flex;
@@ -68,8 +77,9 @@
   .logo {
     a {
       img {
-        max-width: 4rem;
+        max-width: 3.5rem;
         margin-top: 2%;
+        border-radius: 10px;
       }
     }
   }
@@ -85,7 +95,7 @@
         text-decoration: none;
         color: white;
         font-weight: 600;
-        transition: 0.2s ease-in-out;
+        transition: 0.4s ease-in-out;
       }
     }
   }
@@ -103,6 +113,12 @@
 }
 
 .navbar-scroll {
+  background: rgba(255, 255, 255, 1);
+  height: 8vh;
+  box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
+
   .logo {
     a {
       text-decoration: none;
@@ -110,12 +126,14 @@
       font-weight: 700;
       img {
         max-width: 2.5rem;
+        border-radius: 10px;
       }
     }
   }
-  background: rgba(255, 255, 255, 1);
-  height: 8vh;
-  box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: -1px 2px 5px 8px rgba(0, 0, 0, 0.22);
+
+  .navbar-toggle {
+    svg {
+      color: rgb(44, 37, 37);
+    }
+  }
 }

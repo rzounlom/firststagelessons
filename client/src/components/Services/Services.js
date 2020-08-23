@@ -1,20 +1,22 @@
 import React from "react";
 import "./Services.scss";
+import { ServiceList } from "./ServiceData";
 
 const Services = () => {
   return (
-    <div className="services" id="services">
+    <div className="services">
       <div className="service-heading">
         <h1>Lessons</h1>
         <p />
       </div>
       <div className="cards">
-        <div class="card">ONE</div>
-        <div class="card">TWO</div>
-        <div class="card">THREE</div>
-        <div class="card">FOUR</div>
-        <div class="card">FIVE</div>
-        <div class="card">SIX</div>
+        {ServiceList.map((service) => (
+          <div className="card">
+            <div className="card-icon">{service.icon}</div>
+            <div className="card-title">{service.title}</div>
+            <div className="card-description">{service.description}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

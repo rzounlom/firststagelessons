@@ -20,10 +20,6 @@ const Navbar = ({ handleNavToggle }) => {
     });
   });
 
-  const handleNavOffset = () => {
-    return window.innerWidth > 768 ? 10 : -50;
-  };
-
   return (
     <nav className={!scroll ? "navbar" : "navbar-scroll"} id="navbar">
       <div className="logo">
@@ -33,7 +29,6 @@ const Navbar = ({ handleNavToggle }) => {
       </div>
       <ScrollspyNav
         scrollTargetIds={["landing", "services", "about", "team", "contact"]}
-        offset={handleNavOffset()}
         activeNavClass="is-active"
         scrollDuration="1000"
         headerBackground="true"
