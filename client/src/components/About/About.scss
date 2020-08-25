@@ -1,4 +1,151 @@
 .about {
-  background-color: blue;
-  min-height: 500px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-picture {
+    width: 471px;
+    height: 627px;
+    background-image: url(../../img/about/about.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    order: 1;
+  }
+
+  .about-content {
+    height: 71%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: rgb(71, 71, 71);
+    }
+
+    .about-heading {
+      width: 80%;
+      height: 35%;
+      text-align: left;
+
+      h1 {
+        font-size: 4rem;
+        color: rgb(34, 34, 34);
+        margin-bottom: 6%;
+      }
+
+      .about-heading-text {
+        font-size: 1.1rem;
+      }
+    }
+
+    .about-description {
+      width: 80%;
+      height: 30%;
+      .about-description-text {
+        font-size: 1.1rem;
+      }
+    }
+    order: 2;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    .about-picture {
+      order: 2;
+      height: 40%;
+      width: 45%;
+    }
+
+    .about-content {
+      order: 1;
+      height: 40%;
+      width: 80%;
+
+      p {
+        color: rgb(71, 71, 71);
+      }
+
+      .about-heading {
+        width: 90%;
+        height: 35%;
+        text-align: left;
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        .about-heading-text {
+          font-size: 1.1rem;
+        }
+      }
+
+      .about-description {
+        width: 90%;
+        height: 30%;
+        .about-description-text {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 6%;
+    .about-picture {
+      height: 40%;
+      width: 45%;
+    }
+
+    .about-content {
+      order: 1;
+      height: 50%;
+      width: 80%;
+
+      .about-heading {
+        height: 50%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .about-picture {
+      height: 35%;
+      width: 45%;
+    }
+
+    .about-content {
+      order: 1;
+      height: 50%;
+      width: 80%;
+
+      p {
+        color: rgb(71, 71, 71);
+      }
+
+      .about-heading {
+        width: 90%;
+        height: 30%;
+        text-align: left;
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        .about-heading-text {
+          font-size: 1.1rem;
+        }
+      }
+
+      .about-description {
+        width: 90%;
+        height: 30%;
+        .about-description-text {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
 }

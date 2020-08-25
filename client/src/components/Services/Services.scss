@@ -1,13 +1,13 @@
 @import "../../index.scss";
 
 .services {
-  min-height: 60vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 2%;
 
   .service-heading {
     margin-top: 8%;
@@ -90,10 +90,8 @@
   }
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 10%;
     .service-heading {
       margin-top: 13%;
-      margin-bottom: 6%;
     }
 
     .cards {

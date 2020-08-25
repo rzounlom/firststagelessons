@@ -4,7 +4,7 @@ import { ServiceList } from "./ServiceData";
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="service-heading">
         <h1>Lessons</h1>
         <p />
