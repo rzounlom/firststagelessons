@@ -16,7 +16,7 @@
   }
 
   .about-content {
-    height: 71%;
+    height: 80%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@
     align-items: center;
     p {
       color: var(--paragraph-color);
+      line-height: 2rem;
     }
 
     .about-heading {
