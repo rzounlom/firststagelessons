@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 .about {
   height: 100vh;
   display: flex;
@@ -21,7 +23,7 @@
     justify-content: center;
     align-items: center;
     p {
-      color: rgb(71, 71, 71);
+      color: var(--paragraph-color);
     }
 
     .about-heading {
@@ -31,7 +33,7 @@
 
       h1 {
         font-size: 4rem;
-        color: rgb(34, 34, 34);
+        color: var(--heading-color);
         margin-bottom: 6%;
       }
 
@@ -63,10 +65,6 @@
       order: 1;
       height: 40%;
       width: 80%;
-
-      p {
-        color: rgb(71, 71, 71);
-      }
 
       .about-heading {
         width: 90%;
@@ -120,10 +118,6 @@
       order: 1;
       height: 50%;
       width: 80%;
-
-      p {
-        color: rgb(71, 71, 71);
-      }
 
       .about-heading {
         width: 90%;
