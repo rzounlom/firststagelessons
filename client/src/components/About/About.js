@@ -12,19 +12,9 @@ const About = () => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which dont look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum,
+            believable. If you are going to use a passage of Lorem Ipsum
           </p>
         </div>{" "}
-        {/* <div className="about-description">
-          <p className="about-description-text">
-            There are many vtions of passages of Lorem Ipsum available, but the
-            majority have suffered.
-          </p>
-          <p className="about-description-text">
-            There are many vtions of passages of Lorem Ipsum available, but the
-            majority have suffered.
-          </p>
-        </div> */}
       </div>
     </div>
   );

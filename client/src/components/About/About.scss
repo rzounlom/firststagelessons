@@ -16,19 +16,19 @@
   }
 
   .about-content {
-    height: 80%;
-    width: 40%;
+    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     p {
       color: var(--paragraph-color);
-      line-height: 2rem;
+      line-height: 1.8rem;
     }
 
     .about-heading {
-      width: 80%;
+      width: 60%;
       height: 35%;
       text-align: left;
 
@@ -54,22 +54,24 @@
   }
 
   @media screen and (max-width: 768px) {
+    min-height: 100vh !important;
     flex-direction: column;
     justify-content: flex-start;
     .about-picture {
       order: 2;
-      height: 40%;
-      width: 45%;
+      height: 45%;
+      width: 40%;
     }
 
     .about-content {
       order: 1;
       height: 40%;
       width: 80%;
+      margin-bottom: 100px;
 
       .about-heading {
         width: 90%;
-        height: 35%;
+        height: 40%;
         text-align: left;
 
         h1 {
@@ -91,14 +93,48 @@
     }
   }
 
-  @media screen and (max-width: 500px) {
-    margin-bottom: 6%;
+  @media screen and (max-height: 700px) {
+    margin-bottom: 10%;
+    .about-content {
+      order: 1;
+      height: 50%;
+      width: 80%;
+
+      .about-heading {
+        height: 50%;
+      }
+    }
+
     .about-picture {
-      height: 40%;
+      height: 50%;
       width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+    height: 400px !important;
+    margin-top: 50px;
+    background-image: url(../../img/about/about.jpg);
+    background-size: 100% 100%;
+    .about-picture {
+      display: none;
     }
 
     .about-content {
+      height: 45% !important;
+      background-color: rgba(252, 252, 252, 0.8);
+      margin-top: 20px;
+      p {
+        line-height: 1.5rem;
+        font-size: 1.2rem !important;
+        color: black;
+      }
+
+      h1 {
+        margin-top: -55px;
+      }
       order: 1;
       height: 50%;
       width: 80%;
@@ -110,23 +146,23 @@
   }
 
   @media screen and (max-width: 400px) {
-    .about-picture {
-      height: 35%;
-      width: 45%;
-    }
-
     .about-content {
       order: 1;
-      height: 50%;
+      height: 45% !important;
       width: 80%;
+
+      p {
+        line-height: 1.7rem !important;
+      }
 
       .about-heading {
         width: 90%;
-        height: 30%;
+        height: 25%;
         text-align: left;
 
         h1 {
           font-size: 3rem;
+          margin-top: -100px;
         }
 
         .about-heading-text {
@@ -139,6 +175,20 @@
         height: 30%;
         .about-description-text {
           font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 100vh !important;
+    margin-top: 50px;
+    .about-content {
+      height: 65% !important;
+      .about-heading {
+        height: 30%;
+        h1 {
+          margin-top: -125px;
         }
       }
     }
