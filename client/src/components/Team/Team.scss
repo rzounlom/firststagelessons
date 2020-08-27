@@ -8,6 +8,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 5%;
+  margin-top: -5%;
 
   .team-heading {
     margin-top: 8%;
@@ -163,6 +164,28 @@
     .team-cards {
       .team-card {
         width: 48%;
+
+        .team-card-cover {
+          background: rgba(137, 201, 230, 0.5);
+          background: linear-gradient(
+            60deg,
+            var(--white),
+            rgba(137, 201, 230, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 92%
+          );
+          .team-card-social-icons {
+            svg {
+              display: inherit;
+            }
+          }
+
+          .team-card-content {
+            .team-card-name,
+            .team-card-description {
+              display: inherit;
+            }
+          }
+        }
       }
     }
   }
