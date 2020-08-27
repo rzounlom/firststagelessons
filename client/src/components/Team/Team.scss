@@ -1,4 +1,176 @@
+@import "../../index.scss";
+
 .team {
-  background-color: pink;
-  min-height: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+
+  .team-heading {
+    margin-top: 8%;
+    height: 50px;
+    margin-bottom: 10px;
+    h1 {
+      font-size: 2rem;
+      color: var(--heading-color);
+    }
+    margin-bottom: 3%;
+  }
+
+  .team-cards {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .team-card-1 {
+      background-image: url(../../img/team/guitarist.jpeg);
+    }
+
+    .team-card-2 {
+      background-image: url(../../img/team/drummer.jpeg);
+    }
+
+    .team-card-3 {
+      background-image: url(../../img/team/piono.jpeg);
+    }
+
+    .team-card-4 {
+      background-image: url(../../img/team/bass.jpeg);
+    }
+
+    .team-card-5 {
+      background-image: url(../../img/team/singer.jpeg);
+    }
+
+    .team-card-6 {
+      background-image: url(../../img/team/guitarist-2.jpeg);
+    }
+
+    .team-card-1,
+    .team-card-2,
+    .team-card-3,
+    .team-card-4,
+    .team-card-5,
+    .team-card-6 {
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: rgba(0, 0, 0, 0);
+      padding: 2rem;
+      width: 30.3%;
+      height: 450px;
+      border-radius: 10px;
+      margin: 1%;
+      transition: 0.4s ease-in-out;
+      padding: 0;
+
+      .team-card-cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10%;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2s ease-in-out;
+        border-radius: 10px;
+
+        .team-card-social-icons {
+          color: var(--white);
+          width: 30%;
+          display: flex;
+          justify-content: space-between;
+          a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+              transform: translateY(-5px);
+            }
+            transition: 0.4s ease-in-out;
+          }
+          svg {
+            display: none;
+          }
+        }
+
+        .team-card-content {
+          .team-card-name,
+          .team-card-description {
+            color: var(--white);
+            display: none;
+          }
+          .team-card-name {
+            margin-bottom: 20%;
+            font-size: 1.5rem;
+          }
+
+          .team-card-description {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      &:hover {
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 5px 10px rgba(154, 160, 185, 0.8);
+        -webkit-box-shadow: 0px 5px 10px rgba(154, 160, 185, 0.8);
+        -moz-box-shadow: 0px 0px 10px rgba(154, 160, 185, 0.8);
+        transform: translateY(-5px);
+        .team-card-cover {
+          transition: 0.2s ease-in-out;
+          background: rgba(137, 201, 230, 0.5);
+          background: linear-gradient(
+            60deg,
+            var(--white),
+            rgba(137, 201, 230, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 92%
+          );
+
+          .team-card-social-icons {
+            svg {
+              display: inherit;
+              cursor: pointer;
+            }
+          }
+
+          .team-card-content {
+            .team-card-name,
+            .team-card-description {
+              display: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .team-cards {
+      .team-card {
+        width: 48%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .team-cards {
+      .team-card {
+        width: 80%;
+      }
+    }
+  }
 }
