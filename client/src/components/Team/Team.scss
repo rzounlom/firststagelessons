@@ -159,6 +159,7 @@
   }
 
   @media screen and (max-width: 768px) {
+    margin-bottom: 8%;
     .team-cards {
       .team-card {
         width: 48%;
@@ -167,9 +168,18 @@
   }
 
   @media screen and (max-width: 500px) {
+    margin-bottom: 20%;
     .team-cards {
       .team-card {
         width: 80%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .team-cards {
+      .team-card {
+        width: 90%;
       }
     }
   }
