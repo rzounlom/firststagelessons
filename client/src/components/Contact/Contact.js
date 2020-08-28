@@ -1,4 +1,7 @@
 import React from "react";
+
+import ContactForm from "./ContactForm";
+
 import "./Contact.scss";
 
 const Contact = () => {
@@ -8,8 +11,10 @@ const Contact = () => {
         <h1>Contact</h1>
       </div>
       <div className="contact-content">
-        <div className="contact-picture">Contact Pic</div>
-        <div className="contact-form">Contact Form</div>
+        <div className="contact-picture" />
+        <div className="contact-form">
+          <ContactForm />
+        </div>
       </div>
     </div>
   );

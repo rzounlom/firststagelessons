@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 import { GrClose } from "react-icons/gr";
+import "rsuite/dist/styles/rsuite-default.css";
 
 const App = () => {
   const [navToggle, setNavToggle] = useState(false);

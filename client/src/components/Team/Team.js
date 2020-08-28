@@ -1,6 +1,9 @@
 import React from "react";
+
 import "./Team.scss";
+
 import { TeamData } from "./TeamData";
+
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Team = () => {
@@ -14,13 +17,25 @@ const Team = () => {
         <div className="team-card team-card-1">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>{" "}
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>{" "}
-              <a href="https://twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>
@@ -33,13 +48,25 @@ const Team = () => {
         <div className="team-card team-card-2">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>{" "}
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>{" "}
-              <a href="https://twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>
@@ -54,13 +81,25 @@ const Team = () => {
         <div className="team-card team-card-3">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>{" "}
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>{" "}
-              <a href="https://twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>
@@ -74,13 +113,25 @@ const Team = () => {
         <div className="team-card team-card-4">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>{" "}
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>{" "}
-              <a href="https://twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>
@@ -93,13 +144,25 @@ const Team = () => {
         <div className="team-card team-card-5">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>{" "}
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>{" "}
-              <a href="https://twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>
@@ -112,13 +175,25 @@ const Team = () => {
         <div className="team-card team-card-6">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </a>{" "}
-              <a href="https://linkedin.com" target="_blank">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </a>{" "}
-              <a href="https://twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
             </div>

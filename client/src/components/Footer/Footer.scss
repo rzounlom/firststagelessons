@@ -1,4 +1,43 @@
+@import "../../index.scss";
+
 .footer {
   height: 10vh;
-  background-color: grey;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-social-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--white);
+      padding: 8px 12px;
+      border-radius: 100%;
+      transition: 0.2s ease-in-out;
+      svg {
+        color: var(--white);
+        font-size: 1.5rem;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover {
+        border: 1px solid var(--theme-color);
+        cursor: pointer;
+        transform: scale(1.2);
+        svg {
+          color: var(--theme-color);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  }
 }

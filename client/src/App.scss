@@ -1,16 +1,8 @@
 @import "./index.scss";
 
 .App {
-  height: 100%;
-  display: grid;
-  grid-template-areas:
-    "navbar navbar navbar navbar navbar navbar"
-    "landing landing landing landing landing landing"
-    "services services services services services services"
-    "about about about about about about"
-    "team team team team team team"
-    "contact contact contact contact contact contact"
-    "footer footer footer footer footer footer";
+  display: flex;
+  flex-direction: column;
 
   .navbar-mobile-opened {
     position: fixed;

@@ -13,7 +13,8 @@
     "react-icons": "^3.10.0",
     "react-scripts": "3.4.3",
     "react-scrollspy": "^3.4.3",
-    "react-scrollspy-nav": "^1.2.4"
+    "react-scrollspy-nav": "^1.2.4",
+    "rsuite": "^4.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
