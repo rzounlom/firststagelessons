@@ -15,7 +15,7 @@ const ContactForm = () => {
       </div>
       <div className="input-group-2">
         <div className="form-group">
-          <label>Subject</label>
+          <label>Subject:</label>
           <input type="text" name="subject" required />
         </div>
       </div>
