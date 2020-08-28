@@ -16,7 +16,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid var(--white);
+      border: 2px solid var(--white);
       padding: 8px 12px;
       border-radius: 100%;
       transition: 0.2s ease-in-out;
@@ -30,9 +30,10 @@
       &:hover {
         border: 1px solid var(--theme-color);
         cursor: pointer;
-        transform: scale(1.2);
+
         svg {
           color: var(--theme-color);
+          transform: scale(1.1);
         }
       }
     }

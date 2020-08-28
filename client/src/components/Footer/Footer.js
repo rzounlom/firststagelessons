@@ -2,7 +2,12 @@ import React from "react";
 
 import "./Footer.scss";
 
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaInstagramSquare,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,10 +20,10 @@ const Footer = () => {
           <FaFacebookF />
         </div>{" "}
         <div className="svg-container">
-          <FaLinkedinIn />
+          <FaInstagramSquare />
         </div>{" "}
         <div className="svg-container">
-          <FaTwitter />
+          <FaLinkedinIn />
         </div>
       </div>
     </div>
