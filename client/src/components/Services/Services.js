@@ -10,11 +10,11 @@ const Services = () => {
         <p />
       </div>
       <div className="cards">
-        {ServiceList.map((service) => (
-          <div className="card">
-            <div className="card-icon">{service.icon}</div>
-            <div className="card-title">{service.title}</div>
-            <div className="card-description">{service.description}</div>
+        {ServiceList.map(({ id, icon, title, description }) => (
+          <div key={id} className="card">
+            <div className="card-icon">{icon}</div>
+            <div className="card-title">{title}</div>
+            <div className="card-description">{description}</div>
           </div>
         ))}
       </div>
