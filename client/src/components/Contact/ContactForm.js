@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const [sendEmail, setSendEmail] = useState({
@@ -8,12 +9,14 @@ const ContactForm = () => {
     message: "",
   });
 
+  const { name, email, subject, message } = sendEmail;
+
   const onInputChange = (event) => {
     const { name, value } = event.target;
     setSendEmail({ ...sendEmail, [name]: value });
   };
 
-  const onFormSubmit = (event) => {
+  const onFormSubmit = async (event) => {
     event.preventDefault();
     setSendEmail({
       name: "",
@@ -21,10 +24,9 @@ const ContactForm = () => {
       subject: "",
       message: "",
     });
+    await axios.get("http:localhost:5000/send-email", sendEmail);
     console.log(sendEmail);
   };
-
-  const { name, email, subject, message } = sendEmail;
 
   return (
     <form onSubmit={onFormSubmit}>
