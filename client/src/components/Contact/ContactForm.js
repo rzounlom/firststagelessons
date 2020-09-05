@@ -18,14 +18,24 @@ const ContactForm = () => {
 
   const onFormSubmit = async (event) => {
     event.preventDefault();
-    await axios.get("http:localhost:5000/send-email", sendEmail);
-    console.log(sendEmail);
-    setSendEmail({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    try {
+      console.log(sendEmail);
+      await axios.post("http://localhost:5000/send-email", sendEmail);
+      setSendEmail({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      setSendEmail({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }
   };
 
   return (
