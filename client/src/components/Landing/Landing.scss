@@ -15,17 +15,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     h1 {
       color: var(--white);
       font-weight: 700;
-      font-size: 5.5rem;
+      font-size: 6.5rem;
       opacity: 0.9;
       text-align: center;
     }
 
     p {
       color: var(--border-color);
-      margin-bottom: 20px;
+      margin: 25px 0;
       text-align: center;
       font-size: 1.7rem;
     }
@@ -77,6 +78,7 @@
 
       p {
         font-size: 1.5rem;
+        padding: 0 2%;
       }
     }
 
@@ -86,6 +88,7 @@
       }
 
       p {
+        text-align: center;
         font-size: 1.3rem;
       }
     }

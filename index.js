@@ -18,19 +18,15 @@ sgMail.setApiKey(
 app.get("/send-email", async (req, res) => {
   // const {name, email, subject, message} = req.body
   const msg = {
-    to: "skillz21c@.com",
+    to: "skillz21c@yahoo.com",
     from: "rzounlom@gmail.com",
     subject: "Sending with Twilio SendGrid is Fun",
     text: "and easy to do anywhere, even with Node.js",
     html: "<strong>and easy to do anywhere, even with Node.js</strong>",
   };
-  await sgMail
-    .send(msg)
-    .then((e) => console.log(msg))
-    .catch((e) => console.log(e));
-  // console.log(msg);
+
+  await sgMail.send(msg).catch((e) => console.log(e));
   res.json({ msg: "email sent" });
-  console.log(req.body);
 });
 
 if (process.env.NODE_ENV === "production") {
