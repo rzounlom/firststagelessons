@@ -20,7 +20,6 @@ const ContactForm = () => {
   const onFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      console.log(sendEmail);
       await axios.post(`http://localhost:${PORT}/send-email`, sendEmail);
       setSendEmail({
         name: "",
