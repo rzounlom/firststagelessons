@@ -1,0 +1,126 @@
+.rs-modal {
+  width: 60% !important;
+
+  @media screen and (max-width: 1280px) {
+    width: 70% !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 95% !important;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100% !important;
+  }
+}
+
+$yellow-highlight: rgba(245, 245, 107, 1);
+$green-highlight: rgba(121, 245, 49, 1);
+$blue-highlight: rgba(50, 243, 233, 1);
+$red-highlight: rgba(252, 63, 6, 1);
+
+.package-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .package-option {
+    width: 49.7%;
+    min-height: 400px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+
+    &.basic {
+      h4 {
+        background-color: $yellow-highlight;
+      }
+    }
+
+    &.standard {
+      h4 {
+        background-color: $green-highlight;
+      }
+    }
+
+    &.premium {
+      h4 {
+        background-color: $blue-highlight;
+      }
+    }
+
+    .package-option-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 70%;
+
+      h4 {
+        text-align: center;
+        margin-bottom: 7px;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+
+      li > span {
+        margin-bottom: 2px;
+        font-weight: bold;
+      }
+
+      .yellow {
+        background-color: $yellow-highlight;
+      }
+
+      .green {
+        background-color: $green-highlight;
+      }
+
+      .blue {
+        background-color: $blue-highlight;
+      }
+
+      .red {
+        color: $red-highlight;
+        text-decoration: underline;
+      }
+
+      .access {
+        text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      min-height: 400px;
+      .package-option-description {
+        h4 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+      width: 98%;
+      min-height: 250px;
+      margin-bottom: 2%;
+      &:nth-of-type(2) {
+        min-height: 450px;
+      }
+
+      &:nth-of-type(3) {
+        min-height: 510px;
+      }
+      .package-option-description {
+        h4 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
