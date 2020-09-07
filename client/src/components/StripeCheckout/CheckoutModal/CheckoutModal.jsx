@@ -35,7 +35,9 @@ class CheckoutModal extends Component {
     return (
       <div className="modal-container">
         <ButtonToolbar>
-          <button onClick={this.open}>Pay Online</button>
+          <button className="pay-btn" onClick={this.open}>
+            Pay Online
+          </button>
         </ButtonToolbar>
 
         <Modal show={show} onHide={this.close} onExited={this.resetRows}>
