@@ -39,8 +39,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.listen(PORT, () => console.log(`Server Started on port: ${PORT}`));
-
 app.post("/payment", (req, res) => {
   const body = {
     source: req.body.token.id,
@@ -57,3 +55,5 @@ app.post("/payment", (req, res) => {
     }
   });
 });
+
+app.listen(PORT, () => console.log(`Server Started on port: ${PORT}`));
