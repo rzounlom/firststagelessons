@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-const PORT = process.env.PORT || 5000;
 
 const ContactForm = () => {
   const [sendEmail, setSendEmail] = useState({
@@ -20,7 +19,7 @@ const ContactForm = () => {
   const onFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post(`http://localhost:${PORT}/send-email`, sendEmail);
+      await axios.post(`http://localhost:5000/send-email`, sendEmail);
       setSendEmail({
         name: "",
         email: "",

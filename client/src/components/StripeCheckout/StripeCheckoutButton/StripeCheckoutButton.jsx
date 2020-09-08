@@ -2,15 +2,13 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 
-const PORT = process.env.PORT || 5000;
-
 const StripeCheckoutButton = ({ price, name }) => {
   const priceForStripe = price * 100;
   const publishableKey = "pk_test_UP1rx1dUY6Pr1CRG0BMRg80t00L2Zu1igZ";
 
   const onToken = (token) => {
     axios({
-      url: `http://localhost:${PORT}/payment`,
+      url: `http://localhost:5000/payment`,
       method: "post",
       data: {
         amount: priceForStripe,
