@@ -6,7 +6,6 @@ import axios from "axios";
 const StripeCheckoutButton = ({ price, name }) => {
   const priceForStripe = price * 100;
   const publishableKey = process.env.REACT_APP_PUBLISHABLE_KEY;
-  console.log(process.env);
 
   const onToken = async (token) => {
     try {
