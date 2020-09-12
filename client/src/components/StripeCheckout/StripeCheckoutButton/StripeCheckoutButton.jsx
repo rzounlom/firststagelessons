@@ -1,10 +1,12 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
+
 import axios from "axios";
 
 const StripeCheckoutButton = ({ price, name }) => {
   const priceForStripe = price * 100;
-  const publishableKey = "pk_test_UP1rx1dUY6Pr1CRG0BMRg80t00L2Zu1igZ";
+  const publishableKey = process.env.REACT_APP_PUBLISHABLE_KEY;
+  console.log(process.env);
 
   const onToken = async (token) => {
     try {
@@ -13,7 +15,7 @@ const StripeCheckoutButton = ({ price, name }) => {
         token,
       };
 
-      await axios.post("http://localhost:5000/payment", data);
+      await axios.post(process.env.REACT_APP_PAYMENT_URL_DEV, data);
       alert("Payment Successful");
     } catch (error) {
       console.log(error);

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import { emailUrl } from "../../utils/utils";
+
 const ContactForm = () => {
   const [sendEmail, setSendEmail] = useState({
     name: "",
@@ -19,7 +21,7 @@ const ContactForm = () => {
   const onFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/send-email`, sendEmail);
+      await axios.post(emailUrl, sendEmail);
       setSendEmail({
         name: "",
         email: "",
