@@ -181,6 +181,10 @@ class CheckoutModal extends Component {
                           </span>
                         </li>
                       </ul>
+                      <StripeCheckoutButton
+                        price={1.0}
+                        name="Standard Package"
+                      />
                     </div>
                   </div>
                 </div>
