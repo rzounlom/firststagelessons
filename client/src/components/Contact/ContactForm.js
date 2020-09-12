@@ -21,7 +21,7 @@ const ContactForm = () => {
   const onFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post(emailUrl, sendEmail);
+      await axios.post(emailUrl(), sendEmail);
       setSendEmail({
         name: "",
         email: "",

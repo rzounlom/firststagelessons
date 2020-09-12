@@ -1,5 +1,6 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
+import { paymentUrl } from "../../../utils/utils";
 
 import axios from "axios";
 
@@ -14,7 +15,7 @@ const StripeCheckoutButton = ({ price, name }) => {
         token,
       };
 
-      await axios.post(process.env.REACT_APP_PAYMENT_URL_DEV, data);
+      await axios.post(paymentUrl(), data);
       alert("Payment Successful");
     } catch (error) {
       console.log(error);
