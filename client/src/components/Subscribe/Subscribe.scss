@@ -1,0 +1,29 @@
+.subscribe {
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  top: 24%;
+  right: 1%;
+  z-index: 500;
+
+  @media screen and (max-width: 768px) {
+    top: 22%;
+  }
+
+  @media screen and (max-width: 540px) {
+    right: -35px !important;
+    top: 25.5%;
+  }
+
+  @media screen and (max-width: 414px) {
+    top: 25.5%;
+  }
+
+  @media screen and (max-width: 380px) {
+    top: 24%;
+  }
+
+  @media screen and (max-width: 350px) {
+    top: 30%;
+  }
+}

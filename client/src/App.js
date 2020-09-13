@@ -10,6 +10,8 @@ import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Checkout from "./components/StripeCheckout/Checkout";
+import Calendly from "./components/Calendly/Calendly";
+import Subscribe from "./components/Subscribe/Subscribe";
 
 import { GrClose } from "react-icons/gr";
 import "rsuite/dist/styles/rsuite-default.css";
@@ -53,6 +55,8 @@ const App = () => {
         </div>
       </div>
       <Checkout />
+      <Subscribe />
+      <Calendly />
       <Navbar handleNavToggle={handleNavToggle} />
       <Landing />
       <Services />
