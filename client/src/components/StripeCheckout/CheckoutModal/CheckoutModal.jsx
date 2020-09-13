@@ -60,27 +60,27 @@ class CheckoutModal extends Component {
                     <div className="package-option-description">
                       <h4>Basic Lessons Package</h4>
                       <ul>
-                        <li>Price: $100/month</li>
+                        <li>Price: $65/month</li>
                         <li>
                           <span className="access">
                             Access to two teachers for the price of one!
                           </span>
                         </li>
-                        <li>One live online session a week</li>
+                        <li>One 45 minute live online session a week</li>
                         <li>Full access to recorded video content</li>
                         <li>
                           <span className="yellow">Text-based feedback</span>
                         </li>
                       </ul>
                     </div>
-                    <StripeCheckoutButton price={100.0} name="Basic Package" />
+                    <StripeCheckoutButton price={65.0} name="Basic Package" />
                   </div>
                   <div className="package-option  standard">
                     <div className="package-option-description">
                       <h4>Standard Lessons Package</h4>
 
                       <ul>
-                        <li>Price: $125/month</li>
+                        <li>Price: $105/month</li>
                         <li>
                           <span className="access">
                             Access to two teachers for the price of one!
@@ -91,7 +91,7 @@ class CheckoutModal extends Component {
                         <li>Text-based feedback</li>
                         <li>
                           <span className="green">
-                            One face-to-face session a week
+                            One 45 minute face-to-face session a week
                           </span>
                         </li>
                         <li>
@@ -110,7 +110,7 @@ class CheckoutModal extends Component {
                       </ul>
                     </div>
                     <StripeCheckoutButton
-                      price={125.0}
+                      price={105.0}
                       name="Standard Package"
                     />
                   </div>
@@ -119,7 +119,7 @@ class CheckoutModal extends Component {
                       <h4>Premium Lessons Package</h4>
 
                       <ul>
-                        <li>Price: $180/month</li>
+                        <li>Price: $155/month</li>
                         <li>
                           <span className="access">
                             Access to two teachers for the price of one!
@@ -127,14 +127,14 @@ class CheckoutModal extends Component {
                         </li>
                         <li>Full access to recorded video content</li>
                         <li>Text-based feedback</li>
-                        <li>One face-to-face session a week</li>
+                        <li>One 45 minute face-to-face session a week</li>
                         <li>Video-based feedbackk</li>
                         <li>
                           Full access to First Stage Village online gatherings
                         </li>
                         <li>
                           <span className="blue">
-                            Up to three live online session a week
+                            Up to three 45 minute live online session a week
                           </span>
                         </li>
 
@@ -152,7 +152,7 @@ class CheckoutModal extends Component {
                       </ul>
                     </div>
                     <StripeCheckoutButton
-                      price={180.0}
+                      price={155.0}
                       name="Premium Package"
                     />
                   </div>

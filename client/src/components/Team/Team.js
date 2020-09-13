@@ -144,7 +144,7 @@ const Team = () => {
         <div className="team-card team-card-5">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -164,18 +164,20 @@ const Team = () => {
                 rel="noopener noreferrer"
               >
                 <FaTwitter />
-              </a>
+              </a> */}
             </div>
             <div className="team-card-content">
-              <div className="team-card-name">Grace Williams</div>
-              <div className="team-card-description">Vocal Beast</div>
+              <div className="team-card-name">Vocal Lessons</div>
+              <div className="team-card-description">
+                Professional Level Vocal Teacher
+              </div>
             </div>
           </div>
         </div>
         <div className="team-card team-card-6">
           <div className="team-card-cover">
             <div className="team-card-social-icons">
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -195,11 +197,13 @@ const Team = () => {
                 rel="noopener noreferrer"
               >
                 <FaTwitter />
-              </a>
+              </a> */}
             </div>
             <div className="team-card-content">
-              <div className="team-card-name">Sh'a Love</div>
-              <div className="team-card-description">Nasty Guitarist</div>
+              <div className="team-card-name">Lead Guitar Lessons</div>
+              <div className="team-card-description">
+                Professional Level Guitar Teacher
+              </div>
             </div>
           </div>
         </div>

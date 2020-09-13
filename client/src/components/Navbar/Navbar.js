@@ -50,6 +50,7 @@ const Navbar = ({ handleNavToggle }) => {
           <li>
             <a href="#contact">Contact</a>
           </li>
+
           <div className="navbar-toggle">
             <FaBars onClick={() => handleNavToggle()} />
           </div>
