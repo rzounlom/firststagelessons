@@ -2,8 +2,6 @@ import React from "react";
 
 import "./Team.scss";
 
-import { TeamData } from "./TeamData";
-
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Team = () => {

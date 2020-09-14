@@ -9,7 +9,6 @@ class CheckoutModal extends Component {
     super(props);
     this.state = {
       show: false,
-      overflow: true,
       rows: 0,
     };
     this.close = this.close.bind(this);
@@ -31,7 +30,7 @@ class CheckoutModal extends Component {
     }, 2000);
   }
   render() {
-    const { overflow, show } = this.state;
+    const { show } = this.state;
     return (
       <div className="modal-container">
         <ButtonToolbar>

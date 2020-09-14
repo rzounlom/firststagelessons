@@ -13,18 +13,42 @@ const Footer = () => {
   return (
     <div className="footer" id="footer">
       <div className="footer-social-container">
-        <div className="svg-container">
-          <FaTwitter />
-        </div>{" "}
-        <div className="svg-container">
-          <FaFacebookF />
-        </div>{" "}
-        <div className="svg-container">
-          <FaInstagramSquare />
-        </div>{" "}
-        <div className="svg-container">
-          <FaLinkedinIn />
-        </div>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="svg-container">
+            <FaTwitter />
+          </div>
+        </a>{" "}
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="svg-container">
+            <FaFacebookF />
+          </div>{" "}
+        </a>{" "}
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="svg-container">
+            <FaInstagramSquare />
+          </div>{" "}
+        </a>{" "}
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="svg-container">
+            <FaLinkedinIn />
+          </div>
+        </a>
       </div>
     </div>
   );
