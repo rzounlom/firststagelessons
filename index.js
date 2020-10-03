@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config({ path: './.env' });
 const PORT = process.env.PORT || 5000;
-//need
 const app = express();
 
 app.use(cors());
